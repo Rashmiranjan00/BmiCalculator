@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 double calculateBMI({int height, int weight}) =>
-    weight / _heightSquared(height);
+    1.3 * weight / math.pow(height / 100, 2.5);
 
 double calculateMinNormalWeight({int height}) => 18.5 * _heightSquared(height);
 
